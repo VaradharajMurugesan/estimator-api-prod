@@ -1,0 +1,20 @@
+[2023-08-24 22:20:54,010] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-08-24 22:20:54,013] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-08-24 22:20:54,015] INFO in _internal: _log : 186 :  * Restarting with stat
+[2023-08-24 22:20:58,966] WARNING in _internal: _log : 186 :  * Debugger is active!
+[2023-08-24 22:20:58,966] INFO in _internal: _log : 186 :  * Debugger PIN: 105-444-357
+[2023-08-24 22:21:59,644] ERROR in app: wrapped : 106 : Invalid Authentication token!: 'HTTP_AUTHORIZATION'
+[2023-08-24 22:21:59,645] INFO in _internal: _log : 186 : 127.0.0.1 - - [24/Aug/2023 22:21:59] "[31m[1mGET /Bi_Est_Getall HTTP/1.1[0m" 401 -
+[2023-08-25 10:37:24,512] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-08-25 10:37:24,512] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-08-25 10:37:24,512] INFO in _internal: _log : 186 :  * Restarting with stat
+[2023-08-25 10:37:30,819] WARNING in _internal: _log : 186 :  * Debugger is active!
+[2023-08-25 10:37:30,829] INFO in _internal: _log : 186 :  * Debugger PIN: 105-444-357
+[2023-08-25 10:39:19,064] ERROR in _internal: _log : 186 : 127.0.0.1 - - [25/Aug/2023 10:39:19] code 400, message Bad request version ('À\x13À')
+[2023-08-25 10:39:19,070] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/Aug/2023 10:39:19] "[31m[1m\x16\x03\x01\x00å\x01\x00\x00á\x03\x03B9\x09úâW\x166*\x0d\x9aÐoÑÐÝ\x01f\x83K\x043OL\x0b«\x9d\x09\x8c«D\x8a Ú\x9bL© ¶£ëñ±k\x19»Í°3¢cæ%\x0f§æ°Ü\x87ë\x0dö\x1c\x03»\x00$\x13\x01\x13\x02\x13\x03À/À+À0À,Ì©Ì¨À\x09À\x13À[0m" 400 -
+[2023-08-25 10:39:31,198] ERROR in app: wrapped : 106 : Invalid Authentication token!: 'HTTP_AUTHORIZATION'
+[2023-08-25 10:39:31,202] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/Aug/2023 10:39:31] "[31m[1mGET /Bi_EstGetByID/41 HTTP/1.1[0m" 401 -
+[2023-08-25 15:34:57,219] INFO in _internal: _log : 186 :  * Detected change in 'c:\\Users\\intel\\source\\repos\\WebApps\\python\\estimator-api\\app.py', reloading
+[2023-08-25 15:34:57,607] INFO in _internal: _log : 186 :  * Restarting with stat

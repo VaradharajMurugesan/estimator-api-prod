@@ -1,0 +1,9 @@
+[2023-05-18 16:05:51,336] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-18 16:05:51,336] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-18 16:07:09,043] INFO in app: Get_ByID_Estimator : 132 : Get By_ID Process Starting
+[2023-05-18 16:07:11,500] INFO in app: Get_ByID_Estimator : 180 : Get By_ID request received Successfully
+[2023-05-18 16:07:11,501] INFO in _internal: _log : 186 : 127.0.0.1 - - [18/May/2023 16:07:11] "GET /Est_getbyid-Estimator/7 HTTP/1.1" 200 -
+[2023-05-18 16:07:17,704] INFO in app: Get_allEst_tables : 77 : Get All Process Starting
+[2023-05-18 16:07:20,252] INFO in app: Get_allEst_tables : 122 : Get All request received Successfully
+[2023-05-18 16:07:20,259] INFO in _internal: _log : 186 : 127.0.0.1 - - [18/May/2023 16:07:20] "GET /Est_Getall HTTP/1.1" 200 -

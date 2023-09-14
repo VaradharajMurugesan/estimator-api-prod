@@ -1,0 +1,6 @@
+[2023-05-18 16:04:05,634] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-18 16:04:05,634] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-18 16:04:05,640] INFO in _internal: _log : 186 :  * Restarting with stat
+[2023-05-18 16:04:09,886] WARNING in _internal: _log : 186 :  * Debugger is active!
+[2023-05-18 16:04:09,900] INFO in _internal: _log : 186 :  * Debugger PIN: 539-978-112

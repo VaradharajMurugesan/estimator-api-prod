@@ -1,0 +1,362 @@
+[2023-05-24 15:57:52,152] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-24 15:57:52,154] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-24 15:58:07,882] INFO in _internal: _log : 186 : 127.0.0.1 - - [24/May/2023 15:58:07] "[33mGET /Dashboard_getbyid-Estimator/45 HTTP/1.1[0m" 404 -
+[2023-05-24 15:58:13,659] INFO in _internal: _log : 186 : 127.0.0.1 - - [24/May/2023 15:58:13] "[33mGET /Dashboard_getbyid-Estimator/1 HTTP/1.1[0m" 404 -
+[2023-05-24 15:58:39,777] INFO in _internal: _log : 186 : 127.0.0.1 - - [24/May/2023 15:58:39] "[33mGET /DashBoard_Est_Getall HTTP/1.1[0m" 404 -
+[2023-05-24 15:58:58,936] INFO in app: Get_allEst_tables : 79 : BI_Get All Process Starting
+[2023-05-24 15:59:02,613] INFO in app: Get_allEst_tables : 127 : BI_Get All request received Successfully
+[2023-05-24 15:59:02,616] INFO in _internal: _log : 186 : 127.0.0.1 - - [24/May/2023 15:59:02] "GET /Est_Getall HTTP/1.1" 200 -
+[2023-05-24 16:00:21,446] INFO in app: Get_ByID_Estimator : 137 : BI_Get By_ID Process Starting
+[2023-05-24 16:00:25,435] INFO in app: Get_ByID_Estimator : 189 : Get By_ID request received Successfully
+[2023-05-24 16:00:25,435] INFO in _internal: _log : 186 : 127.0.0.1 - - [24/May/2023 16:00:25] "GET /Est_getbyid-Estimator/1 HTTP/1.1" 200 -
+[2023-05-25 13:06:16,872] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:06:16,872] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:08:12,568] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:08:12,568] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:08:24,607] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:08:24] "GET /download_excel_api HTTP/1.1" 200 -
+[2023-05-25 13:10:06,718] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:10:06] "GET /download_excel_api HTTP/1.1" 200 -
+[2023-05-25 13:10:49,355] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:10:49,356] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:11:02,235] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:11:02] "GET /download_excel_api HTTP/1.1" 200 -
+[2023-05-25 13:11:50,626] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:11:50,626] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:11:58,362] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:11:58] "GET /download_excel_api HTTP/1.1" 200 -
+[2023-05-25 13:12:29,352] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:12:29,353] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:12:50,612] ERROR in app: log_exception : 1414 : Exception on /download_excel_api [GET]
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 548, in _write
+    f = float(token)
+        ^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 401, in downloadExcelApi
+    apiResponse = createApiResponse()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 406, in createApiResponse
+    bufferFile = writeBufferExcelFile()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 462, in writeBufferExcelFile
+    worksheet.write(0, 1, rows)
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 110, in cell_wrapper
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 479, in write
+    return self._write(row, col, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 553, in _write
+    raise TypeError("Unsupported type %s in write()" % type(token))
+TypeError: Unsupported type <class 'list'> in write()
+[2023-05-25 13:12:50,723] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:12:50] "[35m[1mGET /download_excel_api HTTP/1.1[0m" 500 -
+[2023-05-25 13:12:50,793] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:12:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-05-25 13:12:58,865] ERROR in app: log_exception : 1414 : Exception on /download_excel_api [GET]
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 548, in _write
+    f = float(token)
+        ^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 401, in downloadExcelApi
+    apiResponse = createApiResponse()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 406, in createApiResponse
+    bufferFile = writeBufferExcelFile()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 462, in writeBufferExcelFile
+    worksheet.write(0, 1, rows)
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 110, in cell_wrapper
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 479, in write
+    return self._write(row, col, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 553, in _write
+    raise TypeError("Unsupported type %s in write()" % type(token))
+TypeError: Unsupported type <class 'list'> in write()
+[2023-05-25 13:12:58,866] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:12:58] "[35m[1mGET /download_excel_api HTTP/1.1[0m" 500 -
+[2023-05-25 13:13:30,041] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:13:30,041] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:13:36,911] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:13:36] "GET /download_excel_api HTTP/1.1" 200 -
+[2023-05-25 13:13:57,875] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:13:57] "[33mGET / HTTP/1.1[0m" 404 -
+[2023-05-25 13:14:00,062] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:14:00] "[33mGET / HTTP/1.1[0m" 404 -
+[2023-05-25 13:15:42,184] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:15:42,184] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:16:57,656] ERROR in app: log_exception : 1414 : Exception on /download_excel_api [GET]
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 548, in _write
+    f = float(token)
+        ^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'tuple'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 401, in downloadExcelApi
+    apiResponse = createApiResponse()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 406, in createApiResponse
+    bufferFile = writeBufferExcelFile()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 462, in writeBufferExcelFile
+    worksheet.write_row(0, 0, rows)
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 110, in cell_wrapper
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 1464, in write_row
+    error = self._write(row, col, token, cell_format)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 553, in _write
+    raise TypeError("Unsupported type %s in write()" % type(token))
+TypeError: Unsupported type <class 'tuple'> in write()
+[2023-05-25 13:16:57,814] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:16:57] "[35m[1mGET /download_excel_api HTTP/1.1[0m" 500 -
+[2023-05-25 13:19:26,668] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:19:26,669] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:19:53,843] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:19:53] "GET /download_excel_api HTTP/1.1" 200 -
+[2023-05-25 13:21:09,271] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:21:09,271] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:21:22,507] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:21:22] "GET /download_excel_api HTTP/1.1" 200 -
+[2023-05-25 13:22:37,504] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:22:37,504] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:22:53,435] ERROR in app: log_exception : 1414 : Exception on /download_excel_api [GET]
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 548, in _write
+    f = float(token)
+        ^^^^^^^^^^^^
+TypeError: float() argument must be a string or a real number, not 'list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 401, in downloadExcelApi
+    apiResponse = createApiResponse()
+                  ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 406, in createApiResponse
+    bufferFile = writeBufferExcelFile()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\intel\source\repos\WebApps\python\estimator-api\app.py", line 463, in writeBufferExcelFile
+    worksheet.write(0, 0, listResult)
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 110, in cell_wrapper
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 479, in write
+    return self._write(row, col, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\xlsxwriter\worksheet.py", line 553, in _write
+    raise TypeError("Unsupported type %s in write()" % type(token))
+TypeError: Unsupported type <class 'list'> in write()
+[2023-05-25 13:22:53,483] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:22:53] "[35m[1mGET /download_excel_api HTTP/1.1[0m" 500 -
+[2023-05-25 13:22:53,560] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:22:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2023-05-25 13:27:11,962] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:27:11,963] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:27:25,029] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:27:25] "GET /download_excel_api HTTP/1.1" 200 -
+[2023-05-25 13:31:26,204] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 13:31:26,204] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 13:31:32,815] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 13:31:32] "GET /download_excel_api HTTP/1.1" 200 -
+[2023-05-25 18:45:31,098] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 18:45:31,098] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 18:47:26,558] INFO in app: downloadExcelApi : 401 : Starting Excell Api function
+[2023-05-25 18:47:26,558] INFO in app: createApiResponse : 412 : Calling writeBufferExcelFile function
+[2023-05-25 18:47:26,558] INFO in app: writeBufferExcelFile : 424 : Updating data to excell file
+[2023-05-25 18:47:29,355] ERROR in app: writeBufferExcelFile : 467 : An error occurred: Could not process parameters: int(1), it must be of type list, tuple or dict
+[2023-05-25 18:47:29,358] INFO in app: createApiResponse : 415 : Returning the bufferFile to downloadExcelApi function
+[2023-05-25 18:47:29,360] INFO in app: downloadExcelApi : 403 : ExcelFile Returning process Successfully executed
+[2023-05-25 18:47:29,383] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 18:47:29] "[35m[1mGET /download_excel_api/1 HTTP/1.1[0m" 500 -
+[2023-05-25 18:47:33,822] ERROR in _internal: _log : 186 : Error on request:
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\serving.py", line 327, in execute
+    for data in application_iter:
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\wsgi.py", line 365, in __next__
+    data = self.file.read(self.buffer_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'read'
+[2023-05-25 18:48:40,185] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 18:48:40] "[33mGET /download_excel_api/BI_estimator_ID/1 HTTP/1.1[0m" 404 -
+[2023-05-25 18:48:44,427] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 18:48:44] "[33mGET /download_excel_api/BI_estimator_ID/1 HTTP/1.1[0m" 404 -
+[2023-05-25 18:50:02,026] INFO in app: downloadExcelApi : 401 : Starting Excell Api function
+[2023-05-25 18:50:02,027] INFO in app: createApiResponse : 412 : Calling writeBufferExcelFile function
+[2023-05-25 18:50:02,027] INFO in app: writeBufferExcelFile : 424 : Updating data to excell file
+[2023-05-25 18:50:04,676] ERROR in app: writeBufferExcelFile : 467 : An error occurred: Could not process parameters: int(1), it must be of type list, tuple or dict
+[2023-05-25 18:50:04,688] INFO in app: createApiResponse : 415 : Returning the bufferFile to downloadExcelApi function
+[2023-05-25 18:50:04,688] INFO in app: downloadExcelApi : 403 : ExcelFile Returning process Successfully executed
+[2023-05-25 18:50:04,707] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 18:50:04] "[35m[1mGET /download_excel_api/1 HTTP/1.1[0m" 500 -
+[2023-05-25 18:50:04,715] ERROR in _internal: _log : 186 : Error on request:
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\serving.py", line 327, in execute
+    for data in application_iter:
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\wsgi.py", line 365, in __next__
+    data = self.file.read(self.buffer_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'read'
+[2023-05-25 18:54:54,200] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 18:54:54,206] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 18:55:02,499] INFO in app: downloadExcelApi : 401 : Starting Excell Api function
+[2023-05-25 18:55:02,499] INFO in app: createApiResponse : 412 : Calling writeBufferExcelFile function
+[2023-05-25 18:55:02,499] INFO in app: writeBufferExcelFile : 424 : Updating data to excell file
+[2023-05-25 18:55:05,442] ERROR in app: writeBufferExcelFile : 467 : An error occurred: Could not process parameters: int(1), it must be of type list, tuple or dict
+[2023-05-25 18:55:05,442] INFO in app: createApiResponse : 415 : Returning the bufferFile to downloadExcelApi function
+[2023-05-25 18:55:05,442] INFO in app: downloadExcelApi : 403 : ExcelFile Returning process Successfully executed
+[2023-05-25 18:55:05,468] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 18:55:05] "[35m[1mGET /download_excel_api/1 HTTP/1.1[0m" 500 -
+[2023-05-25 18:55:05,568] ERROR in _internal: _log : 186 : Error on request:
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\serving.py", line 327, in execute
+    for data in application_iter:
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\wsgi.py", line 365, in __next__
+    data = self.file.read(self.buffer_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'read'
+[2023-05-25 18:55:45,576] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 18:55:45,576] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 18:55:47,304] INFO in app: downloadExcelApi : 401 : Starting Excell Api function
+[2023-05-25 18:55:47,304] INFO in app: createApiResponse : 412 : Calling writeBufferExcelFile function
+[2023-05-25 18:55:47,304] INFO in app: writeBufferExcelFile : 424 : Updating data to excell file
+[2023-05-25 18:55:49,982] ERROR in app: writeBufferExcelFile : 467 : An error occurred: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'e.is_active = 1
+                            AND tg.is_active = 1
+               ' at line 23
+[2023-05-25 18:55:49,983] INFO in app: createApiResponse : 415 : Returning the bufferFile to downloadExcelApi function
+[2023-05-25 18:55:49,983] INFO in app: downloadExcelApi : 403 : ExcelFile Returning process Successfully executed
+[2023-05-25 18:55:49,999] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 18:55:49] "[35m[1mGET /download_excel_api/1 HTTP/1.1[0m" 500 -
+[2023-05-25 18:55:50,038] ERROR in _internal: _log : 186 : Error on request:
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\serving.py", line 327, in execute
+    for data in application_iter:
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\wsgi.py", line 365, in __next__
+    data = self.file.read(self.buffer_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'read'
+[2023-05-25 18:56:29,111] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 18:56:29,111] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 18:57:04,500] INFO in app: downloadExcelApi : 401 : Starting Excell Api function
+[2023-05-25 18:57:04,500] INFO in app: createApiResponse : 412 : Calling writeBufferExcelFile function
+[2023-05-25 18:57:04,500] INFO in app: writeBufferExcelFile : 424 : Updating data to excell file
+[2023-05-25 18:57:07,393] ERROR in app: writeBufferExcelFile : 468 : An error occurred: 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'e.is_active = 1
+                            AND tg.is_active = 1
+               ' at line 23
+[2023-05-25 18:57:07,401] INFO in app: createApiResponse : 415 : Returning the bufferFile to downloadExcelApi function
+[2023-05-25 18:57:07,402] INFO in app: downloadExcelApi : 403 : ExcelFile Returning process Successfully executed
+[2023-05-25 18:57:07,426] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 18:57:07] "[35m[1mGET /download_excel_api/1 HTTP/1.1[0m" 500 -
+[2023-05-25 18:57:07,508] ERROR in _internal: _log : 186 : Error on request:
+Traceback (most recent call last):
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\serving.py", line 327, in execute
+    for data in application_iter:
+  File "C:\Users\intel\source\repos\WebApps\python\estimator-api\.venv\Lib\site-packages\werkzeug\wsgi.py", line 365, in __next__
+    data = self.file.read(self.buffer_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'read'
+[2023-05-25 18:57:56,466] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-05-25 18:57:56,466] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-05-25 18:57:58,803] INFO in app: downloadExcelApi : 401 : Starting Excell Api function
+[2023-05-25 18:57:58,803] INFO in app: createApiResponse : 412 : Calling writeBufferExcelFile function
+[2023-05-25 18:57:58,803] INFO in app: writeBufferExcelFile : 424 : Updating data to excell file
+[2023-05-25 18:58:01,717] INFO in app: writeBufferExcelFile : 464 : Returning the ExcelData to createApiResponse function
+[2023-05-25 18:58:01,717] INFO in app: createApiResponse : 415 : Returning the bufferFile to downloadExcelApi function
+[2023-05-25 18:58:01,717] INFO in app: downloadExcelApi : 403 : ExcelFile Returning process Successfully executed
+[2023-05-25 18:58:01,719] INFO in _internal: _log : 186 : 127.0.0.1 - - [25/May/2023 18:58:01] "GET /download_excel_api/1 HTTP/1.1" 200 -
+[2023-06-27 21:15:55,953] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-06-27 21:15:55,953] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-06-27 21:15:56,042] INFO in _internal: _log : 186 :  * Restarting with stat
+[2023-06-27 21:16:01,672] WARNING in _internal: _log : 186 :  * Debugger is active!
+[2023-06-27 21:16:01,692] INFO in _internal: _log : 186 :  * Debugger PIN: 539-978-112
+[2023-06-27 21:16:31,299] INFO in app: bi_update_Estimator : 385 : Bi_EstimatorUpdate Method Starting
+[2023-06-27 21:16:31,299] INFO in app: bi_update_Estimator : 398 : Data Update Request Received Successfully
+[2023-06-27 21:16:34,599] INFO in app: bi_update_Estimator : 418 : bi_estimator Update1 Request Received Successfully
+[2023-06-27 21:16:34,907] INFO in app: bi_update_Estimator : 423 : bi_taskgroup Update1 Request Received Successfully
+[2023-06-27 21:16:35,204] INFO in app: bi_update_Estimator : 429 : bi_tasklist Update1 Request Received Successfully
+[2023-06-27 21:16:35,470] INFO in app: bi_update_Estimator : 433 : Bi_EstimatorUpdate Process Successfully Executed
+[2023-06-27 21:16:35,476] INFO in _internal: _log : 186 : 127.0.0.1 - - [27/Jun/2023 21:16:35] "PUT /Bi_EstimatorUpdate HTTP/1.1" 200 -
+[2023-06-27 21:16:43,545] INFO in app: bi_updateInsert_Estimator : 443 : Bi_Estimator_Updt_Delete Method Starting
+[2023-06-27 21:16:43,545] INFO in app: bi_updateInsert_Estimator : 457 : Data update request received
+[2023-06-27 21:16:46,371] INFO in app: bi_updateInsert_Estimator : 466 : bi_estimator Data Updated Successfully
+[2023-06-27 21:16:46,674] INFO in app: bi_updateInsert_Estimator : 480 : bi_taskgroup  Data Updated Successfully
+[2023-06-27 21:16:46,989] INFO in app: bi_updateInsert_Estimator : 493 : bi_tasklist Data Updated Successfully
+[2023-06-27 21:16:47,294] INFO in app: bi_updateInsert_Estimator : 493 : bi_tasklist Data Updated Successfully
+[2023-06-27 21:16:47,600] INFO in app: bi_updateInsert_Estimator : 493 : bi_tasklist Data Updated Successfully
+[2023-06-27 21:16:47,917] INFO in app: bi_updateInsert_Estimator : 480 : bi_taskgroup  Data Updated Successfully
+[2023-06-27 21:16:48,215] INFO in app: bi_updateInsert_Estimator : 493 : bi_tasklist Data Updated Successfully
+[2023-06-27 21:16:48,523] INFO in app: bi_updateInsert_Estimator : 493 : bi_tasklist Data Updated Successfully
+[2023-06-27 21:16:48,827] INFO in app: bi_updateInsert_Estimator : 493 : bi_tasklist Data Updated Successfully
+[2023-06-27 21:16:49,139] INFO in app: bi_updateInsert_Estimator : 485 : bi_taskgroup Data Newly Inserted Successfully By PUT Method
+[2023-06-27 21:16:49,440] INFO in app: bi_updateInsert_Estimator : 501 : bi_tasklist Data Newly Inserted Successfully By PUT Method
+[2023-06-27 21:16:49,754] INFO in app: bi_updateInsert_Estimator : 505 : Bi_Estimator_Updt_Delete Process Successfully Executed
+[2023-06-27 21:16:49,755] INFO in _internal: _log : 186 : 127.0.0.1 - - [27/Jun/2023 21:16:49] "PUT /Bi_Estimator_Updt_Delete HTTP/1.1" 200 -
