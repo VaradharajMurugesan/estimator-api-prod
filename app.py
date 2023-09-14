@@ -64,8 +64,8 @@ def background(f):
             keyPermissions = config['key_json']['keyJsonAccess'];
             keyPermissionList = json.loads(keyPermissions)
             public_key = RSAAlgorithm.from_jwk(keyPermissionList)
-            decoded = jwt.decode(IDjwt, public_key, verify=False, audience='c34086b2-8b29-4699-92f8-2e1a15c1498c', algorithms='RS256')   
-            created_by = decoded['preferred_username']
+            decoded = jwt.decode(IDjwt, public_key, verify=False, audience='api://a5d2e839-f63f-4dea-9750-d6054ee08dd7', algorithms='RS256')   
+            created_by = decoded['email']
             role = decoded['roles']
             if callable(f):
                 if decoded['scp'] == 'EstimatorProdAPI':
@@ -145,7 +145,7 @@ def bi_Get_allEst_tables():
         con = DataBase.getConnection()
         cur = con.cursor()
         if 'Admin' not in role:
-            cur.execute("SELECT * FROM bi_estimator WHERE created_by = %s", [created_by])
+            cur.execute("SELECT * FROM bi_estimator WHERE created_by = %s and is_active=1", [created_by])
             cur.fetchall()
             if cur.rowcount==0:
                 app.logger.info('Record Not Found for the New user')
@@ -218,7 +218,7 @@ def bi_Get_ByID_Estimator(BI_estimator_ID):
         con = DataBase.getConnection()
         cur = con.cursor()
         if 'Admin' not in role:
-            cur.execute("SELECT * FROM bi_estimator WHERE created_by = %s", [created_by])
+            cur.execute("SELECT * FROM bi_estimator WHERE created_by = %s and is_active=1", [created_by])
             cur.fetchall()
             if cur.rowcount==0:
                   app.logger.info('Record Not Found for the New user')
@@ -646,7 +646,7 @@ def etl_Get_allEst_tables():
         con = DataBase.getConnection()
         cur = con.cursor()
         if 'Admin' not in role:
-            cur.execute("SELECT * FROM etl_estimator WHERE created_by = %s", [created_by])
+            cur.execute("SELECT * FROM etl_estimator WHERE created_by = %s and is_active=1", [created_by])
             cur.fetchall()
             if cur.rowcount==0:
                   app.logger.info('Record Not Found for the Specific ETL ID')
@@ -720,7 +720,7 @@ def etl_Get_ByID_Estimator(etl_estimator_ID):
         con = DataBase.getConnection()
         cur = con.cursor()
         if 'Admin' not in role:
-            cur.execute("SELECT * FROM etl_estimator WHERE created_by = %s", [created_by])
+            cur.execute("SELECT * FROM etl_estimator WHERE created_by = %s and is_active=1", [created_by])
             cur.fetchall()
             if cur.rowcount==0:
                   app.logger.info('Record Not Found for the Specific ETL ID')
@@ -1080,7 +1080,7 @@ def qa_Get_allEst_tables():
         con = DataBase.getConnection()
         cur = con.cursor()
         if 'Admin' not in role:
-            cur.execute("SELECT * FROM qa_estimator WHERE created_by = %s", [created_by])
+            cur.execute("SELECT * FROM qa_estimator WHERE created_by = %s and is_active=1", [created_by])
             cur.fetchall()
             if cur.rowcount==0:
                   app.logger.info('Record Not Found for the New user')
@@ -1153,7 +1153,7 @@ def qa_Get_ByID_Estimator(qa_estimator_ID):
         con = DataBase.getConnection()
         cur = con.cursor()
         if 'Admin' not in role:
-            cur.execute("SELECT * FROM qa_estimator WHERE created_by = %s", [created_by])
+            cur.execute("SELECT * FROM qa_estimator WHERE created_by = %s and is_active=1", [created_by])
             cur.fetchall()
             if cur.rowcount==0:
                   app.logger.info('Record Not Found for the New user')
