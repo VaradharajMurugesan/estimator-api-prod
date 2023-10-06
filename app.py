@@ -1138,6 +1138,7 @@ def qa_Get_allEst_tables():
         result_json_str=rows[0][0]
         result_json = json.loads(result_json_str)
         app.logger.info('QA_Get All request received Successfully')
+        
         return jsonify(result_json)
   
     except Exception as e:
