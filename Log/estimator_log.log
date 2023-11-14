@@ -1,8 +1,21 @@
-[2023-10-06 19:13:03,255] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2023-11-08 15:41:48,222] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
-[2023-10-06 19:13:03,257] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
-[2023-10-06 19:13:03,260] INFO in _internal: _log : 186 :  * Restarting with stat
-[2023-10-06 19:13:07,880] WARNING in _internal: _log : 186 :  * Debugger is active!
-[2023-10-06 19:13:07,897] INFO in _internal: _log : 186 :  * Debugger PIN: 123-395-137
-[2023-10-06 19:14:07,989] ERROR in app: wrapped : 109 : Invalid Authentication token!: Signature has expired
-[2023-10-06 19:14:07,990] INFO in _internal: _log : 186 : 127.0.0.1 - - [06/Oct/2023 19:14:07] "[31m[1mGET /Qa_Est_Getall HTTP/1.1[0m" 401 -
+[2023-11-08 15:41:48,226] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-11-08 15:41:48,230] INFO in _internal: _log : 186 :  * Restarting with stat
+[2023-11-08 15:41:54,079] WARNING in _internal: _log : 186 :  * Debugger is active!
+[2023-11-08 15:41:54,086] INFO in _internal: _log : 186 :  * Debugger PIN: 105-444-357
+[2023-11-08 15:42:41,715] ERROR in app: wrapped : 109 : Invalid Authentication token!: Signature verification failed
+[2023-11-08 15:42:45,470] INFO in _internal: _log : 186 : 127.0.0.1 - - [08/Nov/2023 15:42:45] "[31m[1mGET /Get_Permission_List HTTP/1.1[0m" 401 -
+[2023-11-08 15:58:15,813] INFO in _internal: _log : 186 :  * Detected change in 'c:\\Users\\intel\\source\\repos\\WebApps\\python\\production\\estimator-api-prod\\app.py', reloading
+[2023-11-08 16:01:22,789] ERROR in app: wrapped : 109 : Invalid Authentication token!: Signature verification failed
+[2023-11-08 16:01:22,809] INFO in _internal: _log : 186 : 127.0.0.1 - - [08/Nov/2023 16:01:22] "[31m[1mGET /Get_Permission_List HTTP/1.1[0m" 401 -
+[2023-11-08 16:01:23,866] INFO in _internal: _log : 186 :  * Restarting with stat
+[2023-11-08 16:01:49,734] INFO in _internal: _log : 186 : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2023-11-08 16:01:49,736] INFO in _internal: _log : 186 : [33mPress CTRL+C to quit[0m
+[2023-11-08 16:01:49,741] INFO in _internal: _log : 186 :  * Restarting with stat
+[2023-11-08 16:01:55,824] WARNING in _internal: _log : 186 :  * Debugger is active!
+[2023-11-08 16:01:55,863] INFO in _internal: _log : 186 :  * Debugger PIN: 105-444-357
+[2023-11-08 16:02:01,477] INFO in app: wrapped : 73 : get_Permission_List Calling function inside wrapper Successfully Executed
+[2023-11-08 16:02:01,477] INFO in app: get_Permission_List : 121 : Get_Permission_List Process Starting
+[2023-11-08 16:02:01,484] INFO in _internal: _log : 186 : 127.0.0.1 - - [08/Nov/2023 16:02:01] "GET /Get_Permission_List HTTP/1.1" 200 -
